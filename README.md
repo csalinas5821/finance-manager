@@ -25,3 +25,10 @@ Where to start?
 3. work on the html page to link the program with it
 
 More ideas to come.
+
+
+set up a pin initially to load up specific accounts
+
+one base class with the inputs
+child classes with operations that the program will be able to execute
+ save accounts onto a seperate file for long term storage
