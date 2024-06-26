@@ -1,26 +1,49 @@
-
 #include <iostream>
 using namespace std;
 
-bool access_screen();
+class Account{
+    private:
+        int passcode;
+    public:
+        Account(int code){ passcode = code; }
+        bool account_access(int code);
+};
+
+bool Account::account_access(int code){
+    if (code == passcode)
+        return true;
+    else
+        return false;
+} 
+// returns true if access granted, false if not granted
+
+bool login_screen();
 
 int main(){
-    bool answer = access_screen();
-    cout << answer;
+    int code;
+    bool answer = login_screen();
+
+
+    if(answer)
+        //create new account;
+        return;
+    else
+        //locate account
+        return;
     return 0;
 }
 
-bool access_screen(){
+bool login_screen(){
        char answer;
     std::cout << "Welcome to Smart Financial Account Manager" << std::endl;
 
-    std::cout << "\nIs this your first time? (Y/N)";
+    std::cout << "\nIs this your first time? (Y/N): ";
     std::cin >> answer;
 
     // Input validation
     while (toupper(answer) != 'Y' && toupper(answer) != 'N') {
         std::cout << "Invalid input, please try again." << std::endl;
-        std::cout << "\nIs this your first time? (Y/N)";
+        std::cout << "\nIs this your first time? (Y/N): ";
         std::cin >> answer;
     }
     if (toupper(answer) == 'Y')

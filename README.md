@@ -26,9 +26,27 @@ Where to start?
 
 More ideas to come.
 
-
-set up a pin initially to load up specific accounts
-
-one base class with the inputs
+-
 child classes with operations that the program will be able to execute
  save accounts onto a seperate file for long term storage
+-
+
+
+okay heres where I am at 6/26/24 at 11:31: 
+
+there is a login screen to ask user if theyre returning or new
+then an if statement to point the user in the right direction, create new account or sign in to account
+
+here is how i want it to work going forward:
+
+if the user is new:
+    -ask them to create a username and a four digit code as a passcode.
+    -use the username for their class name, if possible.
+    -once account is created, send them back to front to log in successfully as returning
+
+if the user is returning:
+    - ask them for their username and passcode
+    - locate username if exists, then verify if passcode works.
+    - if the passcode is entered incorrectly more than 5 times, then they are denied access
+
+I need to get these functions working properly before advancing further.
