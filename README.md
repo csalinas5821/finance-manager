@@ -49,4 +49,13 @@ if the user is returning:
     - locate username if exists, then verify if passcode works.
     - if the passcode is entered incorrectly more than 5 times, then they are denied access
 
-I need to get these functions working properly before advancing further.
+I need t
+
+
+update 6/28/24 at 11:24 am 
+okay so im caffeinted like crazy right now and am having a hard time grasping how i want this to work...
+i would like the information to be saved and stored after usage, in a safe area.
+need to learn how to do that... lol lol ....
+also how to create class account names that arent random, i think i want this to work by grabbing the last saved account name..
+example would be if 100 accounts are created and saved, the next account would 101...
+so first prioritize saving accounts that are created onto a separate file that is secure, then work from there.

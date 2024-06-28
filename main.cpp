@@ -1,11 +1,18 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Account{
     private:
         int passcode;
+        string username;
     public:
-        Account(int code){ passcode = code; }
+        Account(){
+            cout<< "Please Enter a Username: ";
+            cin >> username;
+            cout << "Please Enter a four digit Passcode(Ex: 1234): ";
+            cin >> passcode;
+        }
         bool account_access(int code);
 };
 
@@ -21,6 +28,7 @@ bool login_screen();
 
 int main(){
     int code;
+
     bool answer = login_screen();
 
 
