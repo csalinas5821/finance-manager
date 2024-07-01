@@ -24,6 +24,7 @@ processes i want to work in order of when to complete them:
 4. save when done with each enter
 5. generate reports
 6. create webpage for it
+7. upload bank statements for quick processing and no need to enter it all
 
 how to get this to work/where to begin:
 1. create a class that handles and stores all the entered information
